@@ -1,7 +1,7 @@
-start = '1'*symbol = 'UMA/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
-start = '1'*symbol = 'TIA/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
-start = '0'*symbol = 'UMA/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
-start = '0'*symbol = 'UMA/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
-start = '0'*symbol = 'UMA/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
-start = '0'*symbol = 'UMA/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
-start = '0'*symbol = 'UMA/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
+start = '1'*symbol = 'MDT/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
+start = '1'*symbol = 'ATA/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
+start = '1'*symbol = 'JASMY/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
+start = '1'*symbol = 'RLC/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
+start = '1'*symbol = 'FIL/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
+start = '1'*symbol = 'ALT/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
+start = '1'*symbol = 'ACH/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
