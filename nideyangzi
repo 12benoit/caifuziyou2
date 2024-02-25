@@ -3,5 +3,5 @@ start = '0'*symbol = 'ATA/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*di
 start = '0'*symbol = 'JASMY/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
 start = '0'*symbol = 'RLC/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
 start = 0*symbol = 'FIL/USDT:USDT'*period = '3m'*leverage = 50*multiple = 1*direct = 1*pr_type = 3*prbear=4*prbull=4*activationRate = 3*callbackRate = 1*st_type = 2*st_rate = 3*add_pos = 0*add_rate = 0.2*add_loss = 0*matin = 0*del_record=1
-start = '1'*symbol = 'ALT/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
+start = '0'*symbol = 'ALT/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
 start = '0'*symbol = 'ACH/USDT:USDT'*period = '3m'*leverage = 20*multiple = 3*direct = 1*activationRate = 2*callbackRate = 1*stopRate = 1*matin = 0
