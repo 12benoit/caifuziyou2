@@ -2,20 +2,20 @@
   
 'robot_1': {
     
-    'start': 0, #0为关闭，1为开启
+    'start': 1, #0为关闭，1为开启
     'init': 1, #初始化策略，在关闭时起作用
-    'strategy':'relay_trading', #策略名称
-    'symbol': '1000PEPE/USDT:USDT', #品种名称
+    'strategy':'grid_trading', #策略名称
+    'symbol': 'BAT/USDT:USDT', #品种名称
     'period':'1m', #周期
     'leverage': 20, #杠杆
-    'multiple': 3, #下单倍数，初始1U
+    'multiple': 1, #下单倍数，初始1U
     'direct': 1, #指定交易方向，0为多空，1为多，-1为空
     'pr_type': 1, #止盈类型：1为亏损加设定止盈率，2为单止盈不叠加亏损，3为移动止盈
-    'prbull': 50, #多头止盈率
-    'prbear': 50, #空头止盈率
+    'prbull': 5, #多头止盈率
+    'prbear': 5, #空头止盈率
     'activationRate': 3, #移动止盈触发盈利率
     'callbackRate': 1, #移动止盈触发止盈回撤率
-    'st_type': 1, #止损类型，0为不止损，1，为策略止损，3为固定止损
+    'st_type': 3, #止损类型，0为不止损，1，为策略止损，3为固定止损
     'st_times': 99, #最大止损次数
     'st_rate': 1.5, #固定止损率
     'li_profit_times': 99, #全局最大盈利次数
@@ -23,7 +23,7 @@
     'add_pos': 0, #加仓，0为不加仓，大于0为加仓倍数，初始为1U
     'add_rate': 0.2, #加仓线，为止损线正向叠加率
     'add_loss': 0, #亏损次数以上叠加
-    'matin': 1, #开启叠加马丁
+    'matin': 0, #开启叠加马丁
     'm_type': 1, #叠加马丁类型 1为总计数叠加，2为多空分别计算叠加
     'm_loss': 5, #叠加马丁最高亏算次数
     'm_muti': 1.5, #叠加马丁下单倍数
@@ -58,7 +58,7 @@
     'open_mode': 1, #1顺势，2突破日价，3指定突破
     'sp_pr_bull': 0.5049, #指定突破做多价格
     'sp_pr_bear': 1, #指定突破做空价格
-    'growth_fil': 4, # 涨势过滤 0为不开启，其他正数为比率
+    'growth_fil': 3, # 涨势过滤 0为不开启，其他正数为比率
     }, #攀升交易
     'trend_track':{
     'open_mode': 1, #1顺势，2突破日价，3指定突破
@@ -94,18 +94,18 @@
     
     'start': 1, #0为关闭，1为开启
     'init': 1, #初始化策略，在关闭时起作用
-    'strategy':'relay_trading', #策略名称
-    'symbol': 'DOGE/USDT:USDT', #品种名称
+    'strategy':'grid_trading', #策略名称
+    'symbol': 'BAT/USDT:USDT', #品种名称
     'period':'1m', #周期
     'leverage': 20, #杠杆
-    'multiple': 3, #下单倍数，初始1U
+    'multiple': 1, #下单倍数，初始1U
     'direct': 1, #指定交易方向，0为多空，1为多，-1为空
     'pr_type': 1, #止盈类型：1为亏损加设定止盈率，2为单止盈不叠加亏损，3为移动止盈
-    'prbull': 50, #多头止盈率
-    'prbear': 50, #空头止盈率
+    'prbull': 5, #多头止盈率
+    'prbear': 5, #空头止盈率
     'activationRate': 3, #移动止盈触发盈利率
     'callbackRate': 1, #移动止盈触发止盈回撤率
-    'st_type': 1, #止损类型，0为不止损，1，为策略止损，3为固定止损
+    'st_type': 3, #止损类型，0为不止损，1，为策略止损，3为固定止损
     'st_times': 99, #最大止损次数
     'st_rate': 1.5, #固定止损率
     'li_profit_times': 99, #全局最大盈利次数
@@ -113,7 +113,7 @@
     'add_pos': 0, #加仓，0为不加仓，大于0为加仓倍数，初始为1U
     'add_rate': 0.2, #加仓线，为止损线正向叠加率
     'add_loss': 0, #亏损次数以上叠加
-    'matin': 1, #开启叠加马丁
+    'matin': 0, #开启叠加马丁
     'm_type': 1, #叠加马丁类型 1为总计数叠加，2为多空分别计算叠加
     'm_loss': 5, #叠加马丁最高亏算次数
     'm_muti': 1.5, #叠加马丁下单倍数
@@ -125,7 +125,7 @@
     'move_stop_rate': 1, #止损线较于开仓线移动率，与ms_trig_rate协同使用
     'oscil_trend':{
     'open_mode': 1, #1顺势，2突破日价，3指定突破
-    'open_status': 3, #1震荡，2趋势，3趋势震荡
+    'open_status': 1, #1震荡，2趋势，3趋势震荡
     'draw_rate' : 4, #回调比率
     'sp_pr_bull': 0.5049, #指定突破做多价格
     'sp_pr_bear': 1, #指定突破做空价格
@@ -184,18 +184,18 @@
     
     'start': 1, #0为关闭，1为开启
     'init': 1, #初始化策略，在关闭时起作用
-    'strategy':'relay_trading', #策略名称
-    'symbol': 'GLM/USDT:USDT', #品种名称
+    'strategy':'grid_trading', #策略名称
+    'symbol': 'BAT/USDT:USDT', #品种名称
     'period':'1m', #周期
     'leverage': 20, #杠杆
-    'multiple': 3, #下单倍数，初始1U
+    'multiple': 1, #下单倍数，初始1U
     'direct': 1, #指定交易方向，0为多空，1为多，-1为空
     'pr_type': 1, #止盈类型：1为亏损加设定止盈率，2为单止盈不叠加亏损，3为移动止盈
-    'prbull': 50, #多头止盈率
-    'prbear': 50, #空头止盈率
+    'prbull': 5, #多头止盈率
+    'prbear': 5, #空头止盈率
     'activationRate': 3, #移动止盈触发盈利率
     'callbackRate': 1, #移动止盈触发止盈回撤率
-    'st_type': 1, #止损类型，0为不止损，1，为策略止损，3为固定止损
+    'st_type': 3, #止损类型，0为不止损，1，为策略止损，3为固定止损
     'st_times': 99, #最大止损次数
     'st_rate': 1.5, #固定止损率
     'li_profit_times': 99, #全局最大盈利次数
@@ -203,7 +203,7 @@
     'add_pos': 0, #加仓，0为不加仓，大于0为加仓倍数，初始为1U
     'add_rate': 0.2, #加仓线，为止损线正向叠加率
     'add_loss': 0, #亏损次数以上叠加
-    'matin': 1, #开启叠加马丁
+    'matin': 0, #开启叠加马丁
     'm_type': 1, #叠加马丁类型 1为总计数叠加，2为多空分别计算叠加
     'm_loss': 5, #叠加马丁最高亏算次数
     'm_muti': 1.5, #叠加马丁下单倍数
@@ -215,7 +215,7 @@
     'move_stop_rate': 1, #止损线较于开仓线移动率，与ms_trig_rate协同使用
     'oscil_trend':{
     'open_mode': 1, #1顺势，2突破日价，3指定突破
-    'open_status': 3, #1震荡，2趋势，3趋势震荡
+    'open_status': 1, #1震荡，2趋势，3趋势震荡
     'draw_rate' : 4, #回调比率
     'sp_pr_bull': 0.5049, #指定突破做多价格
     'sp_pr_bear': 1, #指定突破做空价格
@@ -249,7 +249,7 @@
     'break_trading':{
     'open_mode': 2, #1策略，2即时突破
     'range_rate': 1, #即时突破上下轨据中轴线差值率
-    'growth_fil': 4, # 涨势过滤 0为不开启，其他正数为比率
+    'growth_fil': 3, # 涨势过滤 0为不开启，其他正数为比率
     }, #突破策略(测试)
     'grid_trading':{ 
     'or_type': 2, # 1，即时下单，2，反向下单
@@ -274,18 +274,18 @@
     
     'start': 1, #0为关闭，1为开启
     'init': 1, #初始化策略，在关闭时起作用
-    'strategy':'relay_trading', #策略名称
-    'symbol': 'PEOPLE/USDT:USDT', #品种名称
+    'strategy':'grid_trading', #策略名称
+    'symbol': 'BAT/USDT:USDT', #品种名称
     'period':'1m', #周期
     'leverage': 20, #杠杆
-    'multiple': 3, #下单倍数，初始1U
+    'multiple': 1, #下单倍数，初始1U
     'direct': 1, #指定交易方向，0为多空，1为多，-1为空
     'pr_type': 1, #止盈类型：1为亏损加设定止盈率，2为单止盈不叠加亏损，3为移动止盈
-    'prbull': 50, #多头止盈率
-    'prbear': 50, #空头止盈率
+    'prbull': 5, #多头止盈率
+    'prbear': 5, #空头止盈率
     'activationRate': 3, #移动止盈触发盈利率
     'callbackRate': 1, #移动止盈触发止盈回撤率
-    'st_type': 1, #止损类型，0为不止损，1，为策略止损，3为固定止损
+    'st_type': 3, #止损类型，0为不止损，1，为策略止损，3为固定止损
     'st_times': 99, #最大止损次数
     'st_rate': 1.5, #固定止损率
     'li_profit_times': 99, #全局最大盈利次数
@@ -293,18 +293,19 @@
     'add_pos': 0, #加仓，0为不加仓，大于0为加仓倍数，初始为1U
     'add_rate': 0.2, #加仓线，为止损线正向叠加率
     'add_loss': 0, #亏损次数以上叠加
-    'matin': 1, #开启叠加马丁
+    'matin': 0, #开启叠加马丁
     'm_type': 1, #叠加马丁类型 1为总计数叠加，2为多空分别计算叠加
     'm_loss': 5, #叠加马丁最高亏算次数
     'm_muti': 1.5, #叠加马丁下单倍数
     'm_lever': 2, #叠加马丁每层下单次数
     'breakeven': 10, #保本退出，即在指定亏损次数后根据亏损额自动生成止盈位置
     'reduce_rate': -1, #减仓率
+    'reduce_pos': 30, #减仓额
     'ms_trig_rate': 1000, #触发移动止损线盈利率，初始设置1000即不开启
     'move_stop_rate': 1, #止损线较于开仓线移动率，与ms_trig_rate协同使用
     'oscil_trend':{
     'open_mode': 1, #1顺势，2突破日价，3指定突破
-    'open_status': 3, #1震荡，2趋势，3趋势震荡
+    'open_status': 1, #1震荡，2趋势，3趋势震荡
     'draw_rate' : 4, #回调比率
     'sp_pr_bull': 0.5049, #指定突破做多价格
     'sp_pr_bear': 1, #指定突破做空价格
@@ -360,21 +361,20 @@
     },
   
 'robot_5': {
-    
-    'start':1, #0为关闭，1为开启
+    'start': 1, #0为关闭，1为开启
     'init': 1, #初始化策略，在关闭时起作用
-    'strategy':'relay_trading', #策略名称
-    'symbol': 'AXL/USDT:USDT', #品种名称
+    'strategy':'grid_trading', #策略名称
+    'symbol': 'BAT/USDT:USDT', #品种名称
     'period':'1m', #周期
     'leverage': 20, #杠杆
-    'multiple': 3, #下单倍数，初始1U
+    'multiple': 1, #下单倍数，初始1U
     'direct': 1, #指定交易方向，0为多空，1为多，-1为空
     'pr_type': 1, #止盈类型：1为亏损加设定止盈率，2为单止盈不叠加亏损，3为移动止盈
-    'prbull': 50, #多头止盈率
-    'prbear': 50, #空头止盈率
+    'prbull': 5, #多头止盈率
+    'prbear': 5, #空头止盈率
     'activationRate': 3, #移动止盈触发盈利率
     'callbackRate': 1, #移动止盈触发止盈回撤率
-    'st_type': 1, #止损类型，0为不止损，1，为策略止损，3为固定止损
+    'st_type': 3, #止损类型，0为不止损，1，为策略止损，3为固定止损
     'st_times': 99, #最大止损次数
     'st_rate': 1.5, #固定止损率
     'li_profit_times': 99, #全局最大盈利次数
@@ -382,7 +382,7 @@
     'add_pos': 0, #加仓，0为不加仓，大于0为加仓倍数，初始为1U
     'add_rate': 0.2, #加仓线，为止损线正向叠加率
     'add_loss': 0, #亏损次数以上叠加
-    'matin': 1, #开启叠加马丁
+    'matin': 0, #开启叠加马丁
     'm_type': 1, #叠加马丁类型 1为总计数叠加，2为多空分别计算叠加
     'm_loss': 5, #叠加马丁最高亏算次数
     'm_muti': 1.5, #叠加马丁下单倍数
@@ -394,7 +394,7 @@
     'move_stop_rate': 1, #止损线较于开仓线移动率，与ms_trig_rate协同使用
     'oscil_trend':{
     'open_mode': 1, #1顺势，2突破日价，3指定突破
-    'open_status': 3, #1震荡，2趋势，3趋势震荡
+    'open_status': 1, #1震荡，2趋势，3趋势震荡
     'draw_rate' : 4, #回调比率
     'sp_pr_bull': 0.5049, #指定突破做多价格
     'sp_pr_bear': 1, #指定突破做空价格
@@ -451,20 +451,20 @@
   
 'robot_6': {
     
-    'start': 1, #0为关闭，1为开启
+   'start': 1, #0为关闭，1为开启
     'init': 1, #初始化策略，在关闭时起作用
-    'strategy':'relay_trading', #策略名称
-    'symbol': 'JASMY/USDT:USDT', #品种名称
+    'strategy':'grid_trading', #策略名称
+    'symbol': 'BAT/USDT:USDT', #品种名称
     'period':'1m', #周期
     'leverage': 20, #杠杆
-    'multiple': 3, #下单倍数，初始1U
+    'multiple': 1, #下单倍数，初始1U
     'direct': 1, #指定交易方向，0为多空，1为多，-1为空
     'pr_type': 1, #止盈类型：1为亏损加设定止盈率，2为单止盈不叠加亏损，3为移动止盈
-    'prbull': 50, #多头止盈率
-    'prbear': 50, #空头止盈率
+    'prbull': 5, #多头止盈率
+    'prbear': 5, #空头止盈率
     'activationRate': 3, #移动止盈触发盈利率
     'callbackRate': 1, #移动止盈触发止盈回撤率
-    'st_type': 1, #止损类型，0为不止损，1，为策略止损，3为固定止损
+    'st_type': 3, #止损类型，0为不止损，1，为策略止损，3为固定止损
     'st_times': 99, #最大止损次数
     'st_rate': 1.5, #固定止损率
     'li_profit_times': 99, #全局最大盈利次数
@@ -472,7 +472,7 @@
     'add_pos': 0, #加仓，0为不加仓，大于0为加仓倍数，初始为1U
     'add_rate': 0.2, #加仓线，为止损线正向叠加率
     'add_loss': 0, #亏损次数以上叠加
-    'matin': 1, #开启叠加马丁
+    'matin': 0, #开启叠加马丁
     'm_type': 1, #叠加马丁类型 1为总计数叠加，2为多空分别计算叠加
     'm_loss': 5, #叠加马丁最高亏算次数
     'm_muti': 1.5, #叠加马丁下单倍数
@@ -484,7 +484,7 @@
     'move_stop_rate': 1, #止损线较于开仓线移动率，与ms_trig_rate协同使用
     'oscil_trend':{
     'open_mode': 1, #1顺势，2突破日价，3指定突破
-    'open_status': 3, #1震荡，2趋势，3趋势震荡
+    'open_status': 1, #1震荡，2趋势，3趋势震荡
     'draw_rate' : 4, #回调比率
     'sp_pr_bull': 0.5049, #指定突破做多价格
     'sp_pr_bear': 1, #指定突破做空价格
@@ -495,7 +495,7 @@
     'open_status': 1, #1不稳定，2稳定
     'sp_pr_bull': 0.5049, #指定突破做多价格
     'sp_pr_bear': 1, #指定突破做空价格
-    'growth_fil': 4, # 涨势过滤 0为不开启，其他正数为比率
+    'growth_fil': 3, # 涨势过滤 0为不开启，其他正数为比率
     }, #回踩交易
     'relay_trading':{
     'open_mode': 1, #1顺势，2突破日价，3指定突破
@@ -541,20 +541,20 @@
   
 'robot_7': {
     
-    'start': 1, #0为关闭，1为开启
+     'start': 1, #0为关闭，1为开启
     'init': 1, #初始化策略，在关闭时起作用
-    'strategy':'relay_trading', #策略名称
-    'symbol': 'CFX/USDT:USDT', #品种名称
+    'strategy':'grid_trading', #策略名称
+    'symbol': 'BAT/USDT:USDT', #品种名称
     'period':'1m', #周期
     'leverage': 20, #杠杆
-    'multiple': 3, #下单倍数，初始1U
+    'multiple': 1, #下单倍数，初始1U
     'direct': 1, #指定交易方向，0为多空，1为多，-1为空
     'pr_type': 1, #止盈类型：1为亏损加设定止盈率，2为单止盈不叠加亏损，3为移动止盈
-    'prbull': 50, #多头止盈率
-    'prbear': 50, #空头止盈率
+    'prbull': 5, #多头止盈率
+    'prbear': 5, #空头止盈率
     'activationRate': 3, #移动止盈触发盈利率
     'callbackRate': 1, #移动止盈触发止盈回撤率
-    'st_type': 1, #止损类型，0为不止损，1，为策略止损，3为固定止损
+    'st_type': 3, #止损类型，0为不止损，1，为策略止损，3为固定止损
     'st_times': 99, #最大止损次数
     'st_rate': 1.5, #固定止损率
     'li_profit_times': 99, #全局最大盈利次数
@@ -562,7 +562,7 @@
     'add_pos': 0, #加仓，0为不加仓，大于0为加仓倍数，初始为1U
     'add_rate': 0.2, #加仓线，为止损线正向叠加率
     'add_loss': 0, #亏损次数以上叠加
-    'matin': 1, #开启叠加马丁
+    'matin': 0, #开启叠加马丁
     'm_type': 1, #叠加马丁类型 1为总计数叠加，2为多空分别计算叠加
     'm_loss': 5, #叠加马丁最高亏算次数
     'm_muti': 1.5, #叠加马丁下单倍数
@@ -574,7 +574,7 @@
     'move_stop_rate': 1, #止损线较于开仓线移动率，与ms_trig_rate协同使用
     'oscil_trend':{
     'open_mode': 1, #1顺势，2突破日价，3指定突破
-    'open_status': 3, #1震荡，2趋势，3趋势震荡
+    'open_status': 1, #1震荡，2趋势，3趋势震荡
     'draw_rate' : 4, #回调比率
     'sp_pr_bull': 0.5049, #指定突破做多价格
     'sp_pr_bear': 1, #指定突破做空价格
@@ -633,18 +633,18 @@
     
     'start': 1, #0为关闭，1为开启
     'init': 1, #初始化策略，在关闭时起作用
-    'strategy':'relay_trading', #策略名称
-    'symbol': 'SPELL/USDT:USDT', #品种名称
+    'strategy':'grid_trading', #策略名称
+    'symbol': 'BAT/USDT:USDT', #品种名称
     'period':'1m', #周期
     'leverage': 20, #杠杆
-    'multiple': 3, #下单倍数，初始1U
+    'multiple': 1, #下单倍数，初始1U
     'direct': 1, #指定交易方向，0为多空，1为多，-1为空
     'pr_type': 1, #止盈类型：1为亏损加设定止盈率，2为单止盈不叠加亏损，3为移动止盈
-    'prbull': 50, #多头止盈率
-    'prbear': 50, #空头止盈率
+    'prbull': 5, #多头止盈率
+    'prbear': 5, #空头止盈率
     'activationRate': 3, #移动止盈触发盈利率
     'callbackRate': 1, #移动止盈触发止盈回撤率
-    'st_type': 1, #止损类型，0为不止损，1，为策略止损，3为固定止损
+    'st_type': 3, #止损类型，0为不止损，1，为策略止损，3为固定止损
     'st_times': 99, #最大止损次数
     'st_rate': 1.5, #固定止损率
     'li_profit_times': 99, #全局最大盈利次数
@@ -652,7 +652,7 @@
     'add_pos': 0, #加仓，0为不加仓，大于0为加仓倍数，初始为1U
     'add_rate': 0.2, #加仓线，为止损线正向叠加率
     'add_loss': 0, #亏损次数以上叠加
-    'matin': 1, #开启叠加马丁
+    'matin': 0, #开启叠加马丁
     'm_type': 1, #叠加马丁类型 1为总计数叠加，2为多空分别计算叠加
     'm_loss': 5, #叠加马丁最高亏算次数
     'm_muti': 1.5, #叠加马丁下单倍数
@@ -664,7 +664,7 @@
     'move_stop_rate': 1, #止损线较于开仓线移动率，与ms_trig_rate协同使用
     'oscil_trend':{
     'open_mode': 1, #1顺势，2突破日价，3指定突破
-    'open_status': 3, #1震荡，2趋势，3趋势震荡
+    'open_status': 1, #1震荡，2趋势，3趋势震荡
     'draw_rate' : 4, #回调比率
     'sp_pr_bull': 0.5049, #指定突破做多价格
     'sp_pr_bear': 1, #指定突破做空价格
