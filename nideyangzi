@@ -454,7 +454,7 @@
    'start': 1, #0为关闭，1为开启
     'init': 1, #初始化策略，在关闭时起作用
     'strategy':'grid_trading', #策略名称
-    'symbol': 'AKRO/USDT:USDT', #品种名称
+    'symbol': 'DUSK/USDT:USDT', #品种名称
     'period':'1m', #周期
     'leverage': 20, #杠杆
     'multiple': 1, #下单倍数，初始1U
@@ -544,7 +544,7 @@
      'start': 1, #0为关闭，1为开启
     'init': 1, #初始化策略，在关闭时起作用
     'strategy':'grid_trading', #策略名称
-    'symbol': 'PYR/USDT:USDT', #品种名称
+    'symbol': 'ICP/USDT:USDT', #品种名称
     'period':'1m', #周期
     'leverage': 20, #杠杆
     'multiple': 1, #下单倍数，初始1U
