@@ -451,7 +451,7 @@
   
 'robot_6': {
     
-   'start': 0, #0为关闭，1为开启
+   'start': 1, #0为关闭，1为开启
     'init': 1, #初始化策略，在关闭时起作用
     'strategy':'grid_trading', #策略名称
     'symbol': 'ETH/USDT:USDT', #品种名称
@@ -541,7 +541,7 @@
   
 'robot_7': {
     
-     'start': 0, #0为关闭，1为开启
+     'start': 1, #0为关闭，1为开启
     'init': 1, #初始化策略，在关闭时起作用
     'strategy':'grid_trading', #策略名称
     'symbol': 'BTC/USDT:USDT', #品种名称
