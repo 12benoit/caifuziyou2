@@ -95,7 +95,7 @@
     'start': 1, #0为关闭，1为开启
     'init': 1, #初始化策略，在关闭时起作用
     'strategy':'grid_trading', #策略名称
-    'symbol': 'SOL/USDT:USDT', #品种名称
+    'symbol': 'PENDLEUSDT:USDT', #品种名称
     'period':'1m', #周期
     'leverage': 20, #杠杆
     'multiple': 6, #下单倍数，初始1U
@@ -364,7 +364,7 @@
     'start': 1, #0为关闭，1为开启
     'init': 1, #初始化策略，在关闭时起作用
     'strategy':'grid_trading', #策略名称
-    'symbol': 'CFX/USDT:USDT', #品种名称
+    'symbol': 'BOME/USDT:USDT', #品种名称
     'period':'1m', #周期
     'leverage': 20, #杠杆
     'multiple': 6, #下单倍数，初始1U
